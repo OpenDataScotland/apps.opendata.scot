@@ -1,0 +1,25 @@
+# Site settings
+title: Open Data Scotland Apps
+description: A single page subsite directory for Open Data Scotland applications and resources
+baseurl: ""
+url: "https://apps.opendata.scot"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - node_modules/
+  - Gemfile
+  - Gemfile.lock
+  - README.md

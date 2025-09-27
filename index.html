@@ -1,0 +1,69 @@
+---
+layout: default
+title: Home
+---
+
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Welcome to Open Data Scotland</h2>
+                    <p class="lead text-muted">Explore our collection of open data applications and resources for Scotland. Access government spending data, geographic information, documentation, and community resources.</p>
+                </div>
+                
+                <div class="row g-4">
+                    {% for app in site.data.apps %}
+                    <div class="{{ app.column_width }}">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body d-flex flex-column{% if app.column_width == 'col-md-12' %} text-center{% endif %}">
+                                <h5 class="card-title text-{{ app.color }}">
+                                    <i class="bi {{ app.icon }} me-2"></i>{{ app.title }}
+                                </h5>
+                                <p class="card-text flex-grow-1">{{ app.description }}</p>
+                                <a href="{{ app.url }}" class="btn btn-{{ app.color }}" target="_blank" rel="noopener">
+                                    {{ app.button_text }} <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h3 class="mb-4">About Open Data Scotland</h3>
+                <p class="text-muted">Open Data Scotland is committed to making government and public data freely available to citizens, developers, and researchers. Our mission is to promote transparency, innovation, and civic engagement through accessible data resources.</p>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="p-3">
+                            <i class="bi bi-shield-check text-primary fs-2 mb-2"></i>
+                            <h6>Transparency</h6>
+                            <small class="text-muted">Open access to public data</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3">
+                            <i class="bi bi-lightbulb text-success fs-2 mb-2"></i>
+                            <h6>Innovation</h6>
+                            <small class="text-muted">Enabling new solutions and insights</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3">
+                            <i class="bi bi-heart text-danger fs-2 mb-2"></i>
+                            <h6>Community</h6>
+                            <small class="text-muted">Building connections and collaboration</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,42 @@
+# Configuration for Open Data Scotland app cards
+# Each app should have: title, description, url, icon, color, button_text, and column_width
+
+- title: "Open Data Scotland"
+  description: "The main hub for open data initiatives in Scotland, providing access to datasets and information."
+  url: "https://opendata.scot"
+  icon: "bi-house-door"
+  color: "primary"
+  button_text: "Visit Site"
+  column_width: "col-md-6"
+
+- title: "Government Spending"
+  description: "Explore Scottish government spending data with detailed insights and transparency tools."
+  url: "https://govspend.opendata.scot"
+  icon: "bi-graph-up"
+  color: "success"
+  button_text: "View Data"
+  column_width: "col-md-6"
+
+- title: "OpenStreetMap Dundee"
+  description: "Access geographic data and mapping resources specifically for Dundee and surrounding areas."
+  url: "https://osm.dundee.opendata.scot"
+  icon: "bi-geo-alt"
+  color: "info"
+  button_text: "Explore Maps"
+  column_width: "col-md-6"
+
+- title: "Documentation"
+  description: "Comprehensive documentation, guides, and technical resources for developers and data users."
+  url: "https://docs.opendata.scot"
+  icon: "bi-book"
+  color: "warning"
+  button_text: "Read Docs"
+  column_width: "col-md-6"
+
+- title: "Communities"
+  description: "Connect with the Open Data Scotland community, join discussions, and collaborate on projects."
+  url: "https://communities.opendata.scot"
+  icon: "bi-people"
+  color: "danger"
+  button_text: "Join Community"
+  column_width: "col-md-12"
